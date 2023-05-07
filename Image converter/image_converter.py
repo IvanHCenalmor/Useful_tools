@@ -5,7 +5,6 @@ import os
 def image_converter(filename, desired_extension):
     img = cv2.imread(filename)
     file_name, _ = os.path.splitext(filename)
-    print(file_name + desired_extension)
     cv2.imwrite(file_name + desired_extension, img)
     return file_name + desired_extension
 
